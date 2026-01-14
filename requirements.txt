@@ -1,0 +1,6 @@
+flake8
+ruff
+mypy
+pytest
+numpy
+scipy
