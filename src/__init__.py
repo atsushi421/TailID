@@ -1,6 +1,5 @@
 """TailID package for detecting low-density mixtures in high-quantile tails."""
 
-from src.cli import load_data_from_file
 from src.data_processing import (
     excess_set,
     quantile,
@@ -30,6 +29,5 @@ __all__ = [
     "TailIDResult",
     "TailIDScenario",
     "MOS_DEFAULT",
-    "load_data_from_file",
     "select_threshold",
 ]

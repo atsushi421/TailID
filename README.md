@@ -44,24 +44,25 @@ The input file is a text file containing one numeric value per line.
 #### Example
 
 ```bash
-python cli.py data.txt --p_c1 0.95 --n_candidates 31
+python3 cli.py example_data.txt --p_c1 0.95 --n_candidates 50
 ```
 
 Example output:
 
 ```
-Loaded 100 data points from data.txt
+Loaded 1000 data points from example_data.txt
 
 Selecting optimal p_m by minimizing EQMAE...
-Selected p_m = 0.8500
+Selected p_m = 0.8755
 
 ============================================================
 TailID Analysis Result
 ============================================================
 
 Parameters:
-  p_m (extreme value percentile): 0.8500 (auto-selected)
+  p_m (extreme value percentile): 0.8755 (auto-selected)
   p_c1 (candidate percentile): 0.95
+  n_candidates: 50
   gamma (confidence level): 0.9999
   MoS (minimum of samples): 40
 
@@ -70,10 +71,8 @@ Results:
   Scenario: SCENARIO_1
 
 Interpretation:
-  Scenario 1: No inconsistent points detected (|S| = 0). The identical
-  distribution (ID) hypothesis holds for the tail. The tail is stable
-  and suitable for pWCET estimation. Consider combining with KPSS test
-  for additional validation.
+  Scenario 1: No inconsistent points detected (|S| = 0). The identical distribution (ID) hypothesis holds for the tail. The tail is stable and suitable for pWCET estimation. Consider combining with KPSS test for additional validation.
+
 ============================================================
 ```
 

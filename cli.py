@@ -154,6 +154,7 @@ def main(args: Optional[List[str]] = None) -> int:
         print("Parameters:")
         print(f"  p_m (extreme value percentile): {p_m:.4f} (auto-selected)")
         print(f"  p_c1 (candidate percentile): {parsed_args.p_c1}")
+        print(f"  n_candidates: {parsed_args.n_candidates}")
         print(f"  gamma (confidence level): {parsed_args.gamma}")
         print(f"  MoS (minimum of samples): {parsed_args.mos}")
         print()
